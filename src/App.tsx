@@ -1,12 +1,13 @@
 import './App.css'
+import { MainLayout } from './layouts/mainLayout/MainLayoutComponent'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <MainLayout>
+      <p>Hola</p>
+    </MainLayout>
     </>
   )
 }
