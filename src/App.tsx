@@ -1,13 +1,11 @@
 import './App.css'
-import { MainLayout } from './layouts/mainLayout/MainLayoutComponent'
+import { Home } from './pages/home/HomeComponent'
 
 function App() {
 
   return (
     <div className=' m-4 text-gray-800 dark:text-white'>
-    <MainLayout>
-      <p>Hola</p>
-    </MainLayout>
+      <Home/>
     </div>
   )
 }
