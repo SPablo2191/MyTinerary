@@ -3,11 +3,11 @@ import MachuPichu from "../../assets/images/machu_pichu_picture.jpg";
 import { Journey } from "../../models/journey.interface";
 import JourneyCarousel from "../../components/carousel/CarouselComponent";
 
-const journey_list : Journey[] =[
-    {id: 1,cityName: "Tokyo", countryName:"Japan", imageUrl:""} as Journey,
-    {id: 2,cityName: "New York", countryName:"United States", imageUrl:""} as Journey,
-    {id: 3,cityName: "Salta", countryName:"Argentina", imageUrl:""} as Journey,
-    {id: 4,cityName: "Arequipa", countryName:"Perú", imageUrl:""} as Journey,
+const journey_list: Journey[] = [
+    { id: 1, cityName: "Tokyo", countryName: "Japan", imageUrl: "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/05/akihabara-iStock-484915982-1024x600.jpg" } as Journey,
+    { id: 2, cityName: "New York", countryName: "United States", imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/aa/b1/79/caption.jpg?w=1200&h=-1&s=1" } as Journey,
+    { id: 3, cityName: "Salta", countryName: "Argentina", imageUrl: "https://media.viajando.travel/p/ad14f80564c664abcb7dc54c319fb650/adjuntos/255/imagenes/000/327/0000327535/1200x675/smart/salta-san-franciscojpg.jpg" } as Journey,
+    { id: 4, cityName: "Arequipa", countryName: "Perú", imageUrl: "https://www.ngenespanol.com/wp-content/uploads/2022/07/GettyImages-1156132465-1280x720.jpg" } as Journey,
 ];
 
 export function Home() {
@@ -27,7 +27,7 @@ export function Home() {
                 </div>
                 <h2 className="text-center my-6 text-3xl">Popular Journeys to make</h2>
                 <div>
-                <JourneyCarousel items={journey_list}/>
+                    <JourneyCarousel items={journey_list} />
                 </div>
             </div>
         </MainLayout>
