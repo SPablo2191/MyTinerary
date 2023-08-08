@@ -1,10 +1,19 @@
 import { MainLayout } from "../../layouts/mainLayout/MainLayoutComponent";
 import MachuPichu from "../../assets/images/machu_pichu_picture.jpg";
+import { Journey } from "../../models/journey.interface";
+import JourneyCarousel from "../../components/carousel/CarouselComponent";
+
+const journey_list : Journey[] =[
+    {id: 1,cityName: "Tokyo", countryName:"Japan", imageUrl:""} as Journey,
+    {id: 2,cityName: "New York", countryName:"United States", imageUrl:""} as Journey,
+    {id: 3,cityName: "Salta", countryName:"Argentina", imageUrl:""} as Journey,
+    {id: 4,cityName: "Arequipa", countryName:"Perú", imageUrl:""} as Journey,
+];
 
 export function Home() {
     return (
         <MainLayout>
-            <div className="my-4 flex justify-center align-items-center border-1">
+            <div className="my-4 flex justify-center align-items-center flex-col border-1">
 
                 <div className="justify-center align-items-center md:grid grid-cols-2 gap-2">
                     <div className="text-justify mr-10">
@@ -15,6 +24,10 @@ export function Home() {
                     <div>
                         <img src={MachuPichu} alt="" className="w-full rounded-lg" />
                     </div>
+                </div>
+                <h2 className="text-center my-6 text-3xl">Popular Journeys to make</h2>
+                <div>
+                <JourneyCarousel items={journey_list}/>
                 </div>
             </div>
         </MainLayout>
